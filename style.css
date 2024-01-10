@@ -1,0 +1,124 @@
+:root{
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('images/pattern-background-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--clr-pale-blue);
+}
+
+.wrapper{
+  max-width: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--clr-very-pale-blue);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px -15px var(--clr-bright-blue);
+}
+.hero-img{
+  width: 100%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 35px 40px 35px;
+}
+
+h1{
+  font-size: 1.4rem;
+  font-weight: var(--fw-black);
+  color: var(--clr-dark-blue);
+}
+p{
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: var(--fw-normal);
+  color: var(--clr-desaturated-blue);
+  margin-block: 15px;
+}
+
+.subscription{
+  display: flex;
+  margin-block: 20px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.subscription img{
+  width: 40px;
+}
+.plan{
+  font-weight: var(--fw-normal);  
+  margin-right: 55px;
+  color: var(--clr-desaturated-blue);
+}
+.plan span{
+  color: var(--clr-dark-blue);
+  font-weight: var(--fw-black);
+}
+.subscription a{
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-bright-blue);
+}
+.subscription a:active{
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.7);
+}
+
+button{
+  margin-block: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color: var(--clr-bright-blue);
+  color: var(--clr-pale-blue);
+  font-weight: var(--fw-bold);
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px -5px var(--clr-bright-blue);
+  cursor: pointer;
+}
+button:active{
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel{
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--clr-desaturated-blue);
+  font-weight: var(--fw-bold);
+}
+.cancel:active{
+  color: var(--clr-dark-blue);
+}
+
+
